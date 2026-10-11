@@ -1,9 +1,164 @@
-[package]
-name = "xira"
-version = "0.1.0"
+[workspace]
+resolver = "3"
+members = [
+    "xira",
+    "xira-macros",
+]
+[workspace.package]
+
 edition = "2024"
-
 license = "Apache-2.0 OR MIT"
+repository = "https://github.com/Suryune/xira"
 
-[dependencies]
-syn = "3.0.7"
+[workspace.dependencies]
+syn = {version = "3.0.7", features = ["full"]}
+quote = "1.0.47"
+proc-macro2 = "1.0.107"
+vello = "0.11.0"
+taffy = "0.14.0"
+parley = "0.12.0"
+winit = "0.30.13"
+
+
+# LINEBENDER LINT SET - Cargo.toml - v8
+# See https://linebender.org/wiki/canonical-lints/
+# Adapted for Xira.
+[workspace.lints.rust]
+# This one may vary depending on the project.
+
+unused = "deny"
+
+future_incompatible = "deny"
+
+unsafe_code = "forbid"
+
+
+keyword_idents_2024 = "forbid"
+
+non_ascii_idents = "forbid"
+
+non_local_definitions = "forbid"
+
+unsafe_op_in_unsafe_fn = "forbid"
+
+
+elided_lifetimes_in_paths = "deny"
+
+missing_debug_implementations = "deny"
+
+missing_docs = "warn"
+
+trivial_numeric_casts = "deny"
+
+unnameable_types = "deny"
+
+unreachable_pub = "deny"
+
+unused_import_braces = "deny"
+
+unused_lifetimes = "deny"
+
+unused_macro_rules = "deny"
+
+unused_qualifications = "warn"
+
+[workspace.lints.clippy]
+
+pedantic = { level = "warn", priority = -1 }
+
+cargo = { level = "warn", priority = -1 }
+
+redundant_clone = "deny"
+
+unnecessary_wraps = "deny"
+
+large_enum_variant = "deny"
+
+needless_borrow = "deny"
+
+map_unwrap_or = "deny"
+
+manual_ok_or = "deny"
+
+
+unwrap_used = "warn"
+
+expect_used = "warn"
+
+panic = "warn"
+
+indexing_slicing = "warn"
+
+arithmetic_side_effects = "warn"
+
+float_cmp = "warn"
+
+suboptimal_flops = "warn"
+
+implicit_clone = "warn"
+
+missing_panics_doc = "warn"
+
+missing_errors_doc = "warn"
+
+too_many_arguments = "allow"
+
+allow_attributes_without_reason = "warn"
+
+cast_possible_truncation = "deny"
+
+cast_possible_wrap = "deny"
+
+collection_is_never_read = "forbid"
+
+default_trait_access = "warn"
+
+dbg_macro = "deny"
+
+debug_assert_with_mut_call = "deny"
+
+doc_markdown = "warn"
+
+fn_to_numeric_cast_any = "forbid"
+
+infinite_loop = "deny"
+
+large_stack_arrays = "deny"
+
+mismatching_type_param_order = "deny"
+
+missing_assert_message = "deny"
+
+missing_fields_in_debug = "deny"
+
+same_functions_in_if_condition = "forbid"
+
+semicolon_if_nothing_returned = "deny"
+
+should_panic_without_expect = "deny"
+
+todo = "warn"
+
+unseparated_literal_suffix = "warn"
+
+use_self = "deny"
+
+
+trivially_copy_pass_by_ref = "warn"
+
+cargo_common_metadata = "deny"
+
+negative_feature_names = "deny"
+
+redundant_feature_names = "deny"
+
+wildcard_dependencies = "forbid"
+[workspace.lints.rustdoc]
+
+broken_intra_doc_links = "deny"
+
+invalid_codeblock_attributes = "deny"
+
+invalid_html_tags = "deny"
+# END LINEBENDER LINT SET
+

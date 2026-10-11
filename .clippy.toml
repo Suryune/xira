@@ -1,0 +1,9 @@
+cognitive-complexity-threshold = 25
+too-many-arguments-threshold = 7
+type-complexity-threshold = 250
+too-many-lines-threshold = 100
+disallowed-names = ["foo", "bar", "baz", "tmp", "temp"]
+allow-unwrap-in-tests = true
+allow-expect-in-tests = true
+allow-panic-in-tests = true
+msrv = "1.85"

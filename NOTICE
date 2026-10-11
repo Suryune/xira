@@ -1,0 +1,11 @@
+Xira
+Copyright 2026 The Xira Authors
+
+This project includes lint configuration adapted from the Linebender project.
+See https://linebender.org/wiki/canonical-lints/
+
+Original: Linebender canonical lint set v8 (Apache-2.0 OR MIT).
+Copyright 2023 The Linebender Authors.
+Modifications:
+- Added lints not present in the original set
+- Upgraded several lint levels from "warn" to "deny" or "forbid"
