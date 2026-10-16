@@ -4,6 +4,8 @@
 Xira is an experimental Rust UI framework.  
 Its core ideas are unity, determinism, and performance.  
 
+See the [Core Model](docs/core-model.md) for details.
+
 ## Unity
 
 All Widgets are just Widgets; they do not hold data.  

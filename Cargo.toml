@@ -1,8 +1,8 @@
 [workspace]
 resolver = "3"
 members = [
-    "xira",
-    "xira-macros",
+    "xira", "xira-core",
+    "xira-macros", "xira-macros-core", "xira-runtime",
 ]
 [workspace.package]
 
@@ -15,7 +15,7 @@ syn = {version = "3.0.7", features = ["full"]}
 quote = "1.0.47"
 proc-macro2 = "1.0.107"
 vello = "0.11.0"
-taffy = "0.14.0"
+taffy = "0.15.0"
 parley = "0.12.0"
 winit = "0.30.13"
 

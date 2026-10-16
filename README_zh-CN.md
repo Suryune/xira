@@ -4,6 +4,8 @@
 Xira 是一个实验性的 Rust UI 框架。  
 核心理念是统一、确定性和性能。  
 
+核心模型详见 [docs/core-model_zh-CN.md](docs/core-model_zh-CN.md)。
+
 ## 统一
 
 所有 Widget 都只是 Widget，不持有数据。  
